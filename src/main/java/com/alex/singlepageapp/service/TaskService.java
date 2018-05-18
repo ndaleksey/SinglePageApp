@@ -7,4 +7,5 @@ import com.alex.singlepageapp.domain.Task;
  */
 public interface TaskService {
 	Iterable<Task> list();
+	void save(Task task);
 }

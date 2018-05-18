@@ -20,4 +20,9 @@ public class TaskServiceImlp implements TaskService {
 	public Iterable<Task> list() {
 		return taskRepository.findAll();
 	}
+
+	@Override
+	public void save(Task task) {
+		taskRepository.save(task);
+	}
 }
